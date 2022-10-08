@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct BeerStopApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject var alcoholStore = AlcoholStore()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(alcoholStore)
         }
     }
 }
