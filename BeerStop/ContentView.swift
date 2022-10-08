@@ -10,11 +10,32 @@ import CoreData
 
 struct ContentView: View {
     
-    @EnvironmentObject var alcoholStore: AlcoholStore
+    var alcoholStore: AlcoholStore = .shared
+    
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.price_index)]) var alcohols: FetchedResults<Alcohol>
     
     var body: some View {
-        List(alcoholStore.alcohols) { alcohol in
-            Text(alcohol.title)
+        VStack{
+            Button{
+                print("count: \(alcohols.count)")
+            } label: {
+                Label("Press", systemImage: "star")
+            }
+            List(alcohols) { alcohol in
+                Text(alcohol.title ?? "Bob")
+            }.refreshable {
+                await fetchAlcohols()
+            }
         }
+    }
+    
+    private func fetchAlcohols() async {
+        
+        do {
+            try await alcoholStore.fetchAlcohols()
+        } catch {
+           
+        }
+        
     }
 }
