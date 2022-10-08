@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct BeerStopApp: App {
-    @StateObject var alcoholStore = AlcoholStore()
+    
+//    @StateObject private var dataController = DataController()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(alcoholStore)
+                .environment(\.managedObjectContext, AlcoholStore.shared.container.viewContext)
         }
     }
 }
