@@ -18,7 +18,6 @@
 		852E91D328F10A9600B7777C /* AlcoholProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91D228F10A9600B7777C /* AlcoholProperties.swift */; };
 		852E91D528F10CA800B7777C /* AlcoholStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91D428F10CA800B7777C /* AlcoholStore.swift */; };
 		852E91D728F10D0C00B7777C /* AlcoholAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91D628F10D0C00B7777C /* AlcoholAPI.swift */; };
-		852E91D928F1181700B7777C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91D828F1181700B7777C /* DataController.swift */; };
 		852E91E328F2091400B7777C /* AlcoholError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91E228F2091400B7777C /* AlcoholError.swift */; };
 		852E91EE28F2124100B7777C /* Alcohol+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91EC28F2124100B7777C /* Alcohol+CoreDataClass.swift */; };
 		852E91EF28F2124100B7777C /* Alcohol+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91ED28F2124100B7777C /* Alcohol+CoreDataProperties.swift */; };
@@ -70,7 +69,6 @@
 		852E91D228F10A9600B7777C /* AlcoholProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholProperties.swift; sourceTree = "<group>"; };
 		852E91D428F10CA800B7777C /* AlcoholStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholStore.swift; sourceTree = "<group>"; };
 		852E91D628F10D0C00B7777C /* AlcoholAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholAPI.swift; sourceTree = "<group>"; };
-		852E91D828F1181700B7777C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		852E91E228F2091400B7777C /* AlcoholError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholError.swift; sourceTree = "<group>"; };
 		852E91EC28F2124100B7777C /* Alcohol+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alcohol+CoreDataClass.swift"; sourceTree = "<group>"; };
 		852E91ED28F2124100B7777C /* Alcohol+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alcohol+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -146,16 +144,10 @@
 				852E91F228F2325E00B7777C /* Resources */,
 				852E91D128F10A7C00B7777C /* Model */,
 				852E915628F0919300B7777C /* BeerStopApp.swift */,
-				852E915828F0919300B7777C /* ContentView.swift */,
+				852E921728F3933A00B7777C /* View */,
 				852E915A28F0919600B7777C /* Assets.xcassets */,
 				852E916128F0919600B7777C /* BeerStop.xcdatamodeld */,
 				852E915C28F0919600B7777C /* Preview Content */,
-				852E91D828F1181700B7777C /* DataController.swift */,
-				852E91F028F22A5700B7777C /* HomeView.swift */,
-				852E920128F2391F00B7777C /* MostEfficientCardView.swift */,
-				852E920328F23DFD00B7777C /* CircleImage.swift */,
-				852E921328F34F2200B7777C /* SearchBar.swift */,
-				852E921528F3539F00B7777C /* CategoryCardView.swift */,
 			);
 			path = BeerStop;
 			sourceTree = "<group>";
@@ -224,6 +216,19 @@
 				852E920D28F33B1600B7777C /* UIColorExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		852E921728F3933A00B7777C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				852E915828F0919300B7777C /* ContentView.swift */,
+				852E91F028F22A5700B7777C /* HomeView.swift */,
+				852E920128F2391F00B7777C /* MostEfficientCardView.swift */,
+				852E920328F23DFD00B7777C /* CircleImage.swift */,
+				852E921328F34F2200B7777C /* SearchBar.swift */,
+				852E921528F3539F00B7777C /* CategoryCardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,7 +387,6 @@
 				852E920228F2391F00B7777C /* MostEfficientCardView.swift in Sources */,
 				852E921028F33B1600B7777C /* UIColorExtension.swift in Sources */,
 				852E915928F0919300B7777C /* ContentView.swift in Sources */,
-				852E91D928F1181700B7777C /* DataController.swift in Sources */,
 				852E91D728F10D0C00B7777C /* AlcoholAPI.swift in Sources */,
 				852E915728F0919300B7777C /* BeerStopApp.swift in Sources */,
 			);

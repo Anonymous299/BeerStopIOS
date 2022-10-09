@@ -10,7 +10,7 @@ import CoreData
 import UIKit
 
 class AlcoholStore: ObservableObject {
-    let url = URL(string: "http://68.183.108.111/api/alcohol/efficient?numberOfResults=9999999999")!
+    let url = URL(string: "http://68.183.108.111/api/alcohol?sortBy=price_index&numberOfResults=9999999999")!
     
     static let shared = AlcoholStore()
     
