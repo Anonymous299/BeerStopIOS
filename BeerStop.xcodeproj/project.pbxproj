@@ -35,6 +35,7 @@
 		852E921128F33B1600B7777C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E920E28F33B1600B7777C /* ColorExtension.swift */; };
 		852E921428F34F2200B7777C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921328F34F2200B7777C /* SearchBar.swift */; };
 		852E921628F3539F00B7777C /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921528F3539F00B7777C /* CategoryCardView.swift */; };
+		852E921928F393BD00B7777C /* AlcoholDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921828F393BD00B7777C /* AlcoholDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		852E920E28F33B1600B7777C /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		852E921328F34F2200B7777C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		852E921528F3539F00B7777C /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
+		852E921828F393BD00B7777C /* AlcoholDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				852E920328F23DFD00B7777C /* CircleImage.swift */,
 				852E921328F34F2200B7777C /* SearchBar.swift */,
 				852E921528F3539F00B7777C /* CategoryCardView.swift */,
+				852E921828F393BD00B7777C /* AlcoholDescriptionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				852E920428F23DFD00B7777C /* CircleImage.swift in Sources */,
 				852E921428F34F2200B7777C /* SearchBar.swift in Sources */,
 				852E91D328F10A9600B7777C /* AlcoholProperties.swift in Sources */,
+				852E921928F393BD00B7777C /* AlcoholDescriptionView.swift in Sources */,
 				852E921128F33B1600B7777C /* ColorExtension.swift in Sources */,
 				852E91EF28F2124100B7777C /* Alcohol+CoreDataProperties.swift in Sources */,
 				852E921628F3539F00B7777C /* CategoryCardView.swift in Sources */,

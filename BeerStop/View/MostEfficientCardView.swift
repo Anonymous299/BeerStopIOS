@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct MostEfficientCardView: View {
     
@@ -14,14 +13,6 @@ struct MostEfficientCardView: View {
     
     var body: some View {
         
-                
-//        ZStack{
-//            RoundedRectangle(cornerRadius: 20)
-//                .strokeBorder(SwiftUI.Color.gray, lineWidth: 1)
-//                .frame(minWidth: 0,
-//                       maxWidth: .infinity, minHeight: 150, maxHeight: 150)
-                
-//                .shadow(radius: 5)
         Button{
             print("Clicked most efficient")
         } label: {
@@ -50,11 +41,6 @@ struct MostEfficientCardView: View {
               )
             .background(Color.lairBackgroundGray)
             .cornerRadius(15)
-//            .shadow(
-//              color: Color(white: 1.0).opacity(0.9),
-//              radius: 18,
-//              x: -18,
-//              y: -18)
             .shadow(
               color: Color.lairShadowGray.opacity(0.5),
               radius: 14,
@@ -62,9 +48,6 @@ struct MostEfficientCardView: View {
               y: 14)
         }
         }
-                
-        
-//    }
 }
 
 //struct MostEfficientCardView_Previews: PreviewProvider {
