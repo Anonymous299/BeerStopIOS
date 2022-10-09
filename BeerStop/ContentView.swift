@@ -12,21 +12,10 @@ struct ContentView: View {
     
     var alcoholStore: AlcoholStore = .shared
     
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.price_index)]) var alcohols: FetchedResults<Alcohol>
+    
     
     var body: some View {
-        VStack{
-            Button{
-                print("count: \(alcohols.count)")
-            } label: {
-                Label("Press", systemImage: "star")
-            }
-            List(alcohols) { alcohol in
-                Text(alcohol.title ?? "Bob")
-            }.refreshable {
-                await fetchAlcohols()
-            }
-        }
+        HomeView()
     }
     
     private func fetchAlcohols() async {
@@ -37,5 +26,13 @@ struct ContentView: View {
            
         }
         
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .previewDevice("iPad Air (5th generation)")
+            .environment(\.managedObjectContext, AlcoholStore.shared.container.viewContext)
     }
 }

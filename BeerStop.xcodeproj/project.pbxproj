@@ -22,6 +22,20 @@
 		852E91E328F2091400B7777C /* AlcoholError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91E228F2091400B7777C /* AlcoholError.swift */; };
 		852E91EE28F2124100B7777C /* Alcohol+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91EC28F2124100B7777C /* Alcohol+CoreDataClass.swift */; };
 		852E91EF28F2124100B7777C /* Alcohol+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91ED28F2124100B7777C /* Alcohol+CoreDataProperties.swift */; };
+		852E91F128F22A5700B7777C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91F028F22A5700B7777C /* HomeView.swift */; };
+		852E91FA28F2362F00B7777C /* PlayfairDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 852E91F628F2362F00B7777C /* PlayfairDisplay-Bold.otf */; };
+		852E91FB28F2362F00B7777C /* PlayfairDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 852E91F728F2362F00B7777C /* PlayfairDisplay-Black.otf */; };
+		852E91FC28F2362F00B7777C /* PlayfairDisplay-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 852E91F828F2362F00B7777C /* PlayfairDisplay-Italic.otf */; };
+		852E91FD28F2362F00B7777C /* PlayfairDisplaySC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 852E91F928F2362F00B7777C /* PlayfairDisplaySC-Regular.otf */; };
+		852E920028F237D600B7777C /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 852E91FF28F237D600B7777C /* Raleway.ttf */; };
+		852E920228F2391F00B7777C /* MostEfficientCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E920128F2391F00B7777C /* MostEfficientCardView.swift */; };
+		852E920428F23DFD00B7777C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E920328F23DFD00B7777C /* CircleImage.swift */; };
+		852E920728F247F900B7777C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 852E920628F247F900B7777C /* Kingfisher */; };
+		852E920F28F33B1600B7777C /* LinearGradientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E920C28F33B1600B7777C /* LinearGradientExtension.swift */; };
+		852E921028F33B1600B7777C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E920D28F33B1600B7777C /* UIColorExtension.swift */; };
+		852E921128F33B1600B7777C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E920E28F33B1600B7777C /* ColorExtension.swift */; };
+		852E921428F34F2200B7777C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921328F34F2200B7777C /* SearchBar.swift */; };
+		852E921628F3539F00B7777C /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921528F3539F00B7777C /* CategoryCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +74,20 @@
 		852E91E228F2091400B7777C /* AlcoholError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholError.swift; sourceTree = "<group>"; };
 		852E91EC28F2124100B7777C /* Alcohol+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alcohol+CoreDataClass.swift"; sourceTree = "<group>"; };
 		852E91ED28F2124100B7777C /* Alcohol+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alcohol+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		852E91F028F22A5700B7777C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		852E91F528F2336F00B7777C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		852E91F628F2362F00B7777C /* PlayfairDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.otf"; sourceTree = "<group>"; };
+		852E91F728F2362F00B7777C /* PlayfairDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Black.otf"; sourceTree = "<group>"; };
+		852E91F828F2362F00B7777C /* PlayfairDisplay-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.otf"; sourceTree = "<group>"; };
+		852E91F928F2362F00B7777C /* PlayfairDisplaySC-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplaySC-Regular.otf"; sourceTree = "<group>"; };
+		852E91FF28F237D600B7777C /* Raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Raleway.ttf; sourceTree = "<group>"; };
+		852E920128F2391F00B7777C /* MostEfficientCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEfficientCardView.swift; sourceTree = "<group>"; };
+		852E920328F23DFD00B7777C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		852E920C28F33B1600B7777C /* LinearGradientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientExtension.swift; sourceTree = "<group>"; };
+		852E920D28F33B1600B7777C /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		852E920E28F33B1600B7777C /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		852E921328F34F2200B7777C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		852E921528F3539F00B7777C /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852E920728F247F900B7777C /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +141,9 @@
 		852E915528F0919300B7777C /* BeerStop */ = {
 			isa = PBXGroup;
 			children = (
+				852E921228F33B2100B7777C /* Extensions */,
+				852E91F528F2336F00B7777C /* Info.plist */,
+				852E91F228F2325E00B7777C /* Resources */,
 				852E91D128F10A7C00B7777C /* Model */,
 				852E915628F0919300B7777C /* BeerStopApp.swift */,
 				852E915828F0919300B7777C /* ContentView.swift */,
@@ -119,6 +151,11 @@
 				852E916128F0919600B7777C /* BeerStop.xcdatamodeld */,
 				852E915C28F0919600B7777C /* Preview Content */,
 				852E91D828F1181700B7777C /* DataController.swift */,
+				852E91F028F22A5700B7777C /* HomeView.swift */,
+				852E920128F2391F00B7777C /* MostEfficientCardView.swift */,
+				852E920328F23DFD00B7777C /* CircleImage.swift */,
+				852E921328F34F2200B7777C /* SearchBar.swift */,
+				852E921528F3539F00B7777C /* CategoryCardView.swift */,
 			);
 			path = BeerStop;
 			sourceTree = "<group>";
@@ -159,6 +196,36 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		852E91F228F2325E00B7777C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				852E91FF28F237D600B7777C /* Raleway.ttf */,
+				852E91FE28F2363C00B7777C /* playfair */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		852E91FE28F2363C00B7777C /* playfair */ = {
+			isa = PBXGroup;
+			children = (
+				852E91F728F2362F00B7777C /* PlayfairDisplay-Black.otf */,
+				852E91F628F2362F00B7777C /* PlayfairDisplay-Bold.otf */,
+				852E91F828F2362F00B7777C /* PlayfairDisplay-Italic.otf */,
+				852E91F928F2362F00B7777C /* PlayfairDisplaySC-Regular.otf */,
+			);
+			path = playfair;
+			sourceTree = "<group>";
+		};
+		852E921228F33B2100B7777C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				852E920E28F33B1600B7777C /* ColorExtension.swift */,
+				852E920C28F33B1600B7777C /* LinearGradientExtension.swift */,
+				852E920D28F33B1600B7777C /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +242,9 @@
 			dependencies = (
 			);
 			name = BeerStop;
+			packageProductDependencies = (
+				852E920628F247F900B7777C /* Kingfisher */,
+			);
 			productName = BeerStop;
 			productReference = 852E915328F0919300B7777C /* BeerStop.app */;
 			productType = "com.apple.product-type.application";
@@ -247,6 +317,9 @@
 				Base,
 			);
 			mainGroup = 852E914A28F0919300B7777C;
+			packageReferences = (
+				852E920528F247F800B7777C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 852E915428F0919300B7777C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,8 +336,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852E91FC28F2362F00B7777C /* PlayfairDisplay-Italic.otf in Resources */,
+				852E920028F237D600B7777C /* Raleway.ttf in Resources */,
+				852E91FD28F2362F00B7777C /* PlayfairDisplaySC-Regular.otf in Resources */,
+				852E91FB28F2362F00B7777C /* PlayfairDisplay-Black.otf in Resources */,
 				852E915E28F0919600B7777C /* Preview Assets.xcassets in Resources */,
 				852E915B28F0919600B7777C /* Assets.xcassets in Resources */,
+				852E91FA28F2362F00B7777C /* PlayfairDisplay-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,9 +370,17 @@
 				852E916328F0919600B7777C /* BeerStop.xcdatamodeld in Sources */,
 				852E91E328F2091400B7777C /* AlcoholError.swift in Sources */,
 				852E91D528F10CA800B7777C /* AlcoholStore.swift in Sources */,
+				852E920428F23DFD00B7777C /* CircleImage.swift in Sources */,
+				852E921428F34F2200B7777C /* SearchBar.swift in Sources */,
 				852E91D328F10A9600B7777C /* AlcoholProperties.swift in Sources */,
+				852E921128F33B1600B7777C /* ColorExtension.swift in Sources */,
 				852E91EF28F2124100B7777C /* Alcohol+CoreDataProperties.swift in Sources */,
+				852E921628F3539F00B7777C /* CategoryCardView.swift in Sources */,
+				852E91F128F22A5700B7777C /* HomeView.swift in Sources */,
+				852E920F28F33B1600B7777C /* LinearGradientExtension.swift in Sources */,
 				852E91EE28F2124100B7777C /* Alcohol+CoreDataClass.swift in Sources */,
+				852E920228F2391F00B7777C /* MostEfficientCardView.swift in Sources */,
+				852E921028F33B1600B7777C /* UIColorExtension.swift in Sources */,
 				852E915928F0919300B7777C /* ContentView.swift in Sources */,
 				852E91D928F1181700B7777C /* DataController.swift in Sources */,
 				852E91D728F10D0C00B7777C /* AlcoholAPI.swift in Sources */,
@@ -459,6 +545,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BeerStop/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeerStop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -487,6 +574,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BeerStop/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeerStop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -617,6 +705,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		852E920528F247F800B7777C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		852E920628F247F900B7777C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 852E920528F247F800B7777C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		852E916128F0919600B7777C /* BeerStop.xcdatamodeld */ = {
