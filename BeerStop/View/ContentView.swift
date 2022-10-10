@@ -12,27 +12,16 @@ struct ContentView: View {
     
     var alcoholStore: AlcoholStore = .shared
     
-    
-    
     var body: some View {
-        HomeView()
-    }
-    
-    private func fetchAlcohols() async {
-        
-        do {
-            try await alcoholStore.fetchAlcohols()
-        } catch {
-           
+        NavigationView {
+            HomeView()
         }
-        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewDevice("iPad Air (5th generation)")
             .environment(\.managedObjectContext, AlcoholStore.shared.container.viewContext)
     }
 }

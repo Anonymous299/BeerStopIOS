@@ -50,7 +50,37 @@ extension Alcohol {
         rating = alcoholProperties.rating ?? 0
         desc = alcoholProperties.desc
     }
+    
+    static var preview: Alcohol {
+        let alcohols = Alcohol.makePreviews(count: 1)
+        return alcohols[0]
+    }
 
+    @discardableResult
+    static func makePreviews(count: Int) -> [Alcohol] {
+        var alcohols = [Alcohol]()
+        let viewContext = AlcoholStore.preview.container.viewContext
+        for index in 0..<count {
+            let alcohol = Alcohol(context: viewContext)
+            alcohol.id = Int32(index)
+            alcohol.title = "Kelly's"
+            alcohol.brand = "Kelly's"
+            alcohol.category = "Wine"
+            alcohol.subcategory = "Fortified Wine"
+            alcohol.price = 12.45
+            alcohol.volume = 1000
+            alcohol.alcohol_content = 20
+            alcohol.price_index = 0.06225
+            alcohol.country = "Canada"
+            alcohol.url = "https://www.lcbo.com/en/kelly-s-625988"
+            alcohol.thumbnail_url = "https://aem.lcbo.com/content/dam/lcbo/products/6/2/5/9/625988.jpg.thumb.319.319.png"
+            alcohol.image_url = "https://aem.lcbo.com/content/dam/lcbo/products/6/2/5/9/625988.jpg.thumb.1280.1280.png"
+            alcohol.rating = 5
+            alcohol.desc = "With a loyal customer base, Kelly's has stayed true to its unique recipe. Expect aromas and flavours of berry compote, smoke, citrus, cantaloupe and ripe pear. Light to medium-bodied and sweet, this is the ideal choice for creating an adult version of a fruit cocktail, or use it for a red sangria-style beverage."
+            alcohols.append(alcohol)
+        }
+        return alcohols
+    }
 }
 
 extension Alcohol : Identifiable {

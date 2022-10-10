@@ -48,7 +48,8 @@ struct HomeView: View {
                 minWidth: 0,
                 maxWidth: .infinity,
                 alignment: .topLeading
-            )
+            ).navigationTitle("Home")
+                .navigationBarTitleDisplayMode(.inline)
         }
         else{
             ProgressView(label: {
