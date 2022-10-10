@@ -32,6 +32,7 @@ struct AlcoholDescriptionView: View {
                         Text("Subcategory").font(.custom("PlayfairDisplay-Regular", size: 12)).padding(.top,15)
                         Text(alcohol.subcategory!)
                             .font(.custom("Raleway", size: 10))
+                            .padding(.top, 1)
                         Text(String(format: "$ %.2f", alcohol.price)).font(.custom("PlayfairDisplay-Bold", size: 30))
                             .padding(.top, 1)
                         Text("Efficiency").font(.custom("PlayfairDisplay-Bold", size: 15))
