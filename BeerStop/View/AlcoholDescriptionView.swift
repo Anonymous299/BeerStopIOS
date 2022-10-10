@@ -19,8 +19,8 @@ struct AlcoholDescriptionView: View {
             ScrollView{
                 VStack(alignment: .center){
                     Text(alcohol.title!)
-                        .font(.custom("PlayfairDisplay-Bold", size: 32))
-                    Text(alcohol.brand!)
+                        .font(.custom("PlayfairDisplay-Bold", size: 32)).multilineTextAlignment(.center)
+                    Text(alcohol.brand ?? alcohol.title!)
                         .font(.custom("Raleway", size: 18))
                         .padding(.top, 1)
                     RatingView(rating: alcohol.rating).padding(.top, 1)

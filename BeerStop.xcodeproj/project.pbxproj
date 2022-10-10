@@ -36,6 +36,8 @@
 		852E921628F3539F00B7777C /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921528F3539F00B7777C /* CategoryCardView.swift */; };
 		852E921928F393BD00B7777C /* AlcoholDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921828F393BD00B7777C /* AlcoholDescriptionView.swift */; };
 		852E921B28F3CE9A00B7777C /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921A28F3CE9A00B7777C /* RatingView.swift */; };
+		852E921D28F4C28C00B7777C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921C28F4C28C00B7777C /* SearchView.swift */; };
+		852E921F28F4C3FF00B7777C /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921E28F4C3FF00B7777C /* SearchResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		852E921528F3539F00B7777C /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
 		852E921828F393BD00B7777C /* AlcoholDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholDescriptionView.swift; sourceTree = "<group>"; };
 		852E921A28F3CE9A00B7777C /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		852E921C28F4C28C00B7777C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		852E921E28F4C3FF00B7777C /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,8 @@
 				852E921528F3539F00B7777C /* CategoryCardView.swift */,
 				852E921828F393BD00B7777C /* AlcoholDescriptionView.swift */,
 				852E921A28F3CE9A00B7777C /* RatingView.swift */,
+				852E921C28F4C28C00B7777C /* SearchView.swift */,
+				852E921E28F4C3FF00B7777C /* SearchResultView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				852E916328F0919600B7777C /* BeerStop.xcdatamodeld in Sources */,
+				852E921D28F4C28C00B7777C /* SearchView.swift in Sources */,
 				852E91E328F2091400B7777C /* AlcoholError.swift in Sources */,
 				852E91D528F10CA800B7777C /* AlcoholStore.swift in Sources */,
 				852E921B28F3CE9A00B7777C /* RatingView.swift in Sources */,
@@ -383,6 +390,7 @@
 				852E921428F34F2200B7777C /* SearchBar.swift in Sources */,
 				852E91D328F10A9600B7777C /* AlcoholProperties.swift in Sources */,
 				852E921928F393BD00B7777C /* AlcoholDescriptionView.swift in Sources */,
+				852E921F28F4C3FF00B7777C /* SearchResultView.swift in Sources */,
 				852E921128F33B1600B7777C /* ColorExtension.swift in Sources */,
 				852E91EF28F2124100B7777C /* Alcohol+CoreDataProperties.swift in Sources */,
 				852E921628F3539F00B7777C /* CategoryCardView.swift in Sources */,
