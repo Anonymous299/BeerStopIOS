@@ -14,6 +14,14 @@ class AlcoholStore: ObservableObject {
     
     static let shared = AlcoholStore()
     
+    /// A alcohols provider for use with canvas previews.
+    static let preview: AlcoholStore = {
+        let store = AlcoholStore(inMemory: true)
+//        Alcohol.makePreviews(count: 10)
+        return store
+    }()
+    
+    
     private let inMemory: Bool
     private var notificationToken: NSObjectProtocol?
     

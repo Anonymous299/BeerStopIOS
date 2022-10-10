@@ -17,7 +17,6 @@
 		852E917928F0919600B7777C /* BeerStopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E917828F0919600B7777C /* BeerStopUITestsLaunchTests.swift */; };
 		852E91D328F10A9600B7777C /* AlcoholProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91D228F10A9600B7777C /* AlcoholProperties.swift */; };
 		852E91D528F10CA800B7777C /* AlcoholStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91D428F10CA800B7777C /* AlcoholStore.swift */; };
-		852E91D728F10D0C00B7777C /* AlcoholAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91D628F10D0C00B7777C /* AlcoholAPI.swift */; };
 		852E91E328F2091400B7777C /* AlcoholError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91E228F2091400B7777C /* AlcoholError.swift */; };
 		852E91EE28F2124100B7777C /* Alcohol+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91EC28F2124100B7777C /* Alcohol+CoreDataClass.swift */; };
 		852E91EF28F2124100B7777C /* Alcohol+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E91ED28F2124100B7777C /* Alcohol+CoreDataProperties.swift */; };
@@ -36,6 +35,7 @@
 		852E921428F34F2200B7777C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921328F34F2200B7777C /* SearchBar.swift */; };
 		852E921628F3539F00B7777C /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921528F3539F00B7777C /* CategoryCardView.swift */; };
 		852E921928F393BD00B7777C /* AlcoholDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921828F393BD00B7777C /* AlcoholDescriptionView.swift */; };
+		852E921B28F3CE9A00B7777C /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921A28F3CE9A00B7777C /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,6 @@
 		852E917828F0919600B7777C /* BeerStopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerStopUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		852E91D228F10A9600B7777C /* AlcoholProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholProperties.swift; sourceTree = "<group>"; };
 		852E91D428F10CA800B7777C /* AlcoholStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholStore.swift; sourceTree = "<group>"; };
-		852E91D628F10D0C00B7777C /* AlcoholAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholAPI.swift; sourceTree = "<group>"; };
 		852E91E228F2091400B7777C /* AlcoholError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholError.swift; sourceTree = "<group>"; };
 		852E91EC28F2124100B7777C /* Alcohol+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alcohol+CoreDataClass.swift"; sourceTree = "<group>"; };
 		852E91ED28F2124100B7777C /* Alcohol+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alcohol+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		852E921328F34F2200B7777C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		852E921528F3539F00B7777C /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
 		852E921828F393BD00B7777C /* AlcoholDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholDescriptionView.swift; sourceTree = "<group>"; };
+		852E921A28F3CE9A00B7777C /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +184,6 @@
 			children = (
 				852E91D228F10A9600B7777C /* AlcoholProperties.swift */,
 				852E91D428F10CA800B7777C /* AlcoholStore.swift */,
-				852E91D628F10D0C00B7777C /* AlcoholAPI.swift */,
 				852E91E228F2091400B7777C /* AlcoholError.swift */,
 			);
 			path = Model;
@@ -230,6 +229,7 @@
 				852E921328F34F2200B7777C /* SearchBar.swift */,
 				852E921528F3539F00B7777C /* CategoryCardView.swift */,
 				852E921828F393BD00B7777C /* AlcoholDescriptionView.swift */,
+				852E921A28F3CE9A00B7777C /* RatingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,6 +378,7 @@
 				852E916328F0919600B7777C /* BeerStop.xcdatamodeld in Sources */,
 				852E91E328F2091400B7777C /* AlcoholError.swift in Sources */,
 				852E91D528F10CA800B7777C /* AlcoholStore.swift in Sources */,
+				852E921B28F3CE9A00B7777C /* RatingView.swift in Sources */,
 				852E920428F23DFD00B7777C /* CircleImage.swift in Sources */,
 				852E921428F34F2200B7777C /* SearchBar.swift in Sources */,
 				852E91D328F10A9600B7777C /* AlcoholProperties.swift in Sources */,
@@ -391,7 +392,6 @@
 				852E920228F2391F00B7777C /* MostEfficientCardView.swift in Sources */,
 				852E921028F33B1600B7777C /* UIColorExtension.swift in Sources */,
 				852E915928F0919300B7777C /* ContentView.swift in Sources */,
-				852E91D728F10D0C00B7777C /* AlcoholAPI.swift in Sources */,
 				852E915728F0919300B7777C /* BeerStopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
