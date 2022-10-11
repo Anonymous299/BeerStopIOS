@@ -11,11 +11,12 @@ import Kingfisher
 struct AlcoholDescriptionView: View {
     var alcohol: Alcohol!
     
+    @State private var offset = -0.5*UIScreen.main.bounds.width
     var body: some View {
         ZStack{
             KFImage(URL(string: alcohol.image_url!))
                 .resizable()
-                .frame(height: UIScreen.main.bounds.height/1.5).offset(x: -0.5*UIScreen.main.bounds.width)
+                .frame(height: UIScreen.main.bounds.height/1.5).offset(x: offset)
             ScrollView{
                 VStack(alignment: .center){
                     Text(alcohol.title!)
@@ -64,6 +65,8 @@ struct AlcoholDescriptionView: View {
                     .padding(.top, 40)
             }
             
+        }.onWillDisappear{
+            offset = 0
         }
         
     }

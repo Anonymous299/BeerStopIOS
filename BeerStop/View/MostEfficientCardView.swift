@@ -22,7 +22,7 @@ struct MostEfficientCardView: View {
                         .multilineTextAlignment(.center)
                     
                     
-                    Text("The LCBO's most efficient product")
+                    Text("Most efficient product to get hammered")
                     
                     
                         .font(.custom("Raleway", size: 10)).lineLimit(2).multilineTextAlignment(.center)
