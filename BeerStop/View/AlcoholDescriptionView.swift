@@ -14,9 +14,16 @@ struct AlcoholDescriptionView: View {
     @State private var offset = -0.5*UIScreen.main.bounds.width
     var body: some View {
         ZStack{
-            KFImage(URL(string: alcohol.image_url!))
-                .resizable()
-                .frame(height: UIScreen.main.bounds.height/1.5).offset(x: offset)
+            if alcohol.image_url == nil || alcohol.image_url!.isEmpty{
+                Image("beer")
+                    .resizable()
+                    .frame(height: UIScreen.main.bounds.height/1.5).offset(x: offset)
+            }
+            else{
+                KFImage(URL(string: alcohol.image_url!))
+                    .resizable()
+                    .frame(height: UIScreen.main.bounds.height/1.5).offset(x: offset)
+            }
             ScrollView{
                 VStack(alignment: .center){
                     Text(alcohol.title!)

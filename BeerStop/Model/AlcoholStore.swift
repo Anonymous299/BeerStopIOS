@@ -36,13 +36,7 @@ class AlcoholStore: ObservableObject {
             }
         }
         
-        Task {
-            do{
-                try await self.fetchAlcohols()
-            } catch {
-                print("Error fetching alcohols: \(error.localizedDescription)")
-            }
-        }
+        
     }
     
     func fetchPersistentHistory() async {
