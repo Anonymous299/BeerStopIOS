@@ -39,6 +39,9 @@
 		852E921D28F4C28C00B7777C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921C28F4C28C00B7777C /* SearchView.swift */; };
 		852E921F28F4C3FF00B7777C /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E921E28F4C3FF00B7777C /* SearchResultView.swift */; };
 		852E922828F4F66F00B7777C /* WillDisappearHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E922728F4F66F00B7777C /* WillDisappearHandler.swift */; };
+		852E922A28F50D1000B7777C /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E922928F50D1000B7777C /* FilterView.swift */; };
+		852E922C28F5B95800B7777C /* FilterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E922B28F5B95800B7777C /* FilterItemView.swift */; };
+		852E922E28F7488600B7777C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E922D28F7488500B7777C /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		852E921C28F4C28C00B7777C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		852E921E28F4C3FF00B7777C /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
 		852E922728F4F66F00B7777C /* WillDisappearHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillDisappearHandler.swift; sourceTree = "<group>"; };
+		852E922928F50D1000B7777C /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		852E922B28F5B95800B7777C /* FilterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemView.swift; sourceTree = "<group>"; };
+		852E922D28F7488500B7777C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +245,9 @@
 				852E921A28F3CE9A00B7777C /* RatingView.swift */,
 				852E921C28F4C28C00B7777C /* SearchView.swift */,
 				852E921E28F4C3FF00B7777C /* SearchResultView.swift */,
+				852E922928F50D1000B7777C /* FilterView.swift */,
+				852E922B28F5B95800B7777C /* FilterItemView.swift */,
+				852E922D28F7488500B7777C /* RegistrationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -384,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852E922A28F50D1000B7777C /* FilterView.swift in Sources */,
 				852E916328F0919600B7777C /* BeerStop.xcdatamodeld in Sources */,
 				852E921D28F4C28C00B7777C /* SearchView.swift in Sources */,
 				852E91E328F2091400B7777C /* AlcoholError.swift in Sources */,
@@ -393,10 +403,12 @@
 				852E920428F23DFD00B7777C /* CircleImage.swift in Sources */,
 				852E921428F34F2200B7777C /* SearchBar.swift in Sources */,
 				852E91D328F10A9600B7777C /* AlcoholProperties.swift in Sources */,
+				852E922C28F5B95800B7777C /* FilterItemView.swift in Sources */,
 				852E921928F393BD00B7777C /* AlcoholDescriptionView.swift in Sources */,
 				852E921F28F4C3FF00B7777C /* SearchResultView.swift in Sources */,
 				852E921128F33B1600B7777C /* ColorExtension.swift in Sources */,
 				852E91EF28F2124100B7777C /* Alcohol+CoreDataProperties.swift in Sources */,
+				852E922E28F7488600B7777C /* RegistrationView.swift in Sources */,
 				852E921628F3539F00B7777C /* CategoryCardView.swift in Sources */,
 				852E91F128F22A5700B7777C /* HomeView.swift in Sources */,
 				852E920F28F33B1600B7777C /* LinearGradientExtension.swift in Sources */,
@@ -567,11 +579,16 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeerStop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeerStop;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,11 +614,16 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeerStop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeerStop;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -13,7 +13,7 @@ struct CategoryCardView: View {
     var text: String!
     
     var body: some View {
-        NavigationLink(destination: SearchView(category: text)){
+        NavigationLink(destination: SearchView(categories: ([text]), initialIsSearching: false)){
             VStack{
                 LinearGradient.lairHorizontalDark
                     .mask(image.resizable().scaledToFit()).frame(width: 35, height: 35)

@@ -10,13 +10,31 @@ import CoreData
 
 struct ContentView: View {
     
-    var alcoholStore: AlcoholStore = .shared
+    private var name: String? = nil
+    
+    init(){
+    
+        if let data = UserDefaults.standard.string(forKey: "Name") {
+            print(data)
+            name = data
+                    return
+                }
+    }
     
     var body: some View {
         NavigationView {
-            HomeView()
+           
+            if name != nil{
+                HomeView(name: name)
+            }
+            else{
+                RegistrationView()
+            }
+
         }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
