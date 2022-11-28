@@ -15,12 +15,12 @@ struct AlcoholProperties: Codable {
     var title: String
     var brand: String?
     var category: String
-    var subcategory: String
+    var subcategory: String?
     var price: Double
     var volume: Double
     var alcohol_content: Double
     var price_index: Double
-    var country: String
+    var country: String?
     var url: String
     var thumbnail_url: String
     var image_url: String?
@@ -66,3 +66,8 @@ struct AlcoholProperties: Codable {
         ]
     }
 }
+
+struct AlcoholData: Codable{
+    var data: [AlcoholProperties]
+}
+

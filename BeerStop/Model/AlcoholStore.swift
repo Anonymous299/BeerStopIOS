@@ -10,7 +10,7 @@ import CoreData
 import UIKit
 
 class AlcoholStore: ObservableObject {
-    let url = URL(string: "http://68.183.108.111/api/alcohol?sortBy=price_index&numberOfResults=9999999999")!
+    let url = URL(string: "http://68.183.108.111/api/alcohol?sortBy=price_index")!
     
     static let shared = AlcoholStore()
     
@@ -126,7 +126,7 @@ class AlcoholStore: ObservableObject {
     }
     
     /// Fetches the earthquake feed from the remote server, and imports it into Core Data.
-    func fetchAlcohols() async throws {
+    func fetchAlcohols(currentLink: String?) async throws {
         let session = URLSession.shared
         guard let (data, response) = try? await session.data(from: url),
               let httpResponse = response as? HTTPURLResponse,
@@ -139,7 +139,7 @@ class AlcoholStore: ObservableObject {
         do {
             // Decode the AlcoholProperties into a data model.
             let jsonDecoder = JSONDecoder()
-            let alcohols = try jsonDecoder.decode([AlcoholProperties].self, from: data)
+            let alcohols = try jsonDecoder.decode(AlcoholData.self, from: data).data
             
             print("Received \(alcohols.count) records.")
 

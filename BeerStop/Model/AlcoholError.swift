@@ -21,7 +21,7 @@ extension AlcoholError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .wrongDataFormat(let error):
-            return NSLocalizedString("Could not digest the fetched data. \(error.localizedDescription)", comment: "")
+            return NSLocalizedString("Could not digest the fetched data. \(error)", comment: "")
         case .missingData:
             return NSLocalizedString("Found and will discard a quake missing a valid code, magnitude, place, or time.", comment: "")
         case .creationError:
