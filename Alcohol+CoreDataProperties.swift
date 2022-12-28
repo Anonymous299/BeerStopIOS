@@ -32,6 +32,18 @@ extension Alcohol {
     @NSManaged public var url: String?
     @NSManaged public var volume: Double
     
+    
+    class func create(in context: NSManagedObjectContext, properties: AlcoholProperties) -> Alcohol{
+        let alcohol = NSEntityDescription.insertNewObject(forEntityName: "Alcohol", into: context) as! Alcohol
+        do{
+            try alcohol.update(from: properties)
+        }
+        catch {
+            print("Error creating alcohol: \(error.localizedDescription)")
+        }
+        return alcohol
+    }
+    
     /// Updates a Alcohol instance with the values from a AlcoholProperties.
     func update(from alcoholProperties: AlcoholProperties) throws {
         id = Int32(alcoholProperties.id)

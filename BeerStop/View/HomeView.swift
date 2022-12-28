@@ -12,6 +12,8 @@ struct HomeView: View {
     
     var alcoholStore: AlcoholStore = .shared
     
+    @EnvironmentObject var alcoholDataManager: AlcoholDataManager
+    
     @FetchRequest(sortDescriptors: [SortDescriptor(\.price_index)]) var alcohols: FetchedResults<Alcohol>
     
     var name: String!
@@ -22,7 +24,7 @@ struct HomeView: View {
     
     var body: some View {
         VStack{
-            if !alcohols.isEmpty{
+            if !alcoholDataManager.alcoholList.isEmpty{
                 VStack{
                     VStack(alignment: .leading){
                         Image("three-dots-ellipsis-svgrepo-com").resizable()
@@ -92,14 +94,14 @@ struct HomeView: View {
         DispatchQueue.main.async {
             isError = false
         }
-        do{
-            try await alcoholStore.fetchAlcohols()
-        } catch {
-            print("Error fetching alcohols: \(error.localizedDescription)")
-            DispatchQueue.main.async {
-                isError = true
-            }
-        }
+//        do{
+        alcoholDataManager.fetchAlcohols()
+//        } catch {
+//            print("Error fetching alcohols: \(error.localizedDescription)")
+//            DispatchQueue.main.async {
+//                isError = true
+//            }
+//        }
     }
 }
 

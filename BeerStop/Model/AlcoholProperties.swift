@@ -69,5 +69,19 @@ struct AlcoholProperties: Codable {
 
 struct AlcoholData: Codable{
     var data: [AlcoholProperties]
+    var links: AlcoholLinks?
+    var meta: AlcoholMeta?
+}
+
+struct AlcoholLinks: Codable{
+    var first: String
+    var last: String
+    var prev: String?
+    var next: String?
+}
+
+struct AlcoholMeta: Codable{
+    var current_page: Int
+    var last_page: Int
 }
 

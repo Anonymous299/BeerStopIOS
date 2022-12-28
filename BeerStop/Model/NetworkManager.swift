@@ -8,9 +8,14 @@
 import Foundation
 
 class NetworkManager {
-    var currentLink: String? = nil
+    let base_url = URL(string: "http://68.183.108.111/api/alcohol?sortBy=price_index")!
+    
+    var currentUrl: URL? = nil
     
     func resumeFetch(){
+        if(currentUrl == nil){
+            currentUrl = self.base_url
+        }
         
     }
 }

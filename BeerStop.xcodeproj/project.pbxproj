@@ -42,6 +42,7 @@
 		852E922A28F50D1000B7777C /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E922928F50D1000B7777C /* FilterView.swift */; };
 		852E922C28F5B95800B7777C /* FilterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E922B28F5B95800B7777C /* FilterItemView.swift */; };
 		852E922E28F7488600B7777C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E922D28F7488500B7777C /* RegistrationView.swift */; };
+		85E0DD6A2957ECA300B8E9CC /* AlcoholDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E0DD692957ECA300B8E9CC /* AlcoholDataManager.swift */; };
 		85FD92BD29344ECF00415D4B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD92BC29344ECF00415D4B /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		852E922928F50D1000B7777C /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		852E922B28F5B95800B7777C /* FilterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemView.swift; sourceTree = "<group>"; };
 		852E922D28F7488500B7777C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		85E0DD692957ECA300B8E9CC /* AlcoholDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholDataManager.swift; sourceTree = "<group>"; };
 		85FD92BC29344ECF00415D4B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +203,7 @@
 				852E91D428F10CA800B7777C /* AlcoholStore.swift */,
 				852E91E228F2091400B7777C /* AlcoholError.swift */,
 				85FD92BC29344ECF00415D4B /* NetworkManager.swift */,
+				85E0DD692957ECA300B8E9CC /* AlcoholDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				852E920428F23DFD00B7777C /* CircleImage.swift in Sources */,
 				852E921428F34F2200B7777C /* SearchBar.swift in Sources */,
 				852E91D328F10A9600B7777C /* AlcoholProperties.swift in Sources */,
+				85E0DD6A2957ECA300B8E9CC /* AlcoholDataManager.swift in Sources */,
 				852E922C28F5B95800B7777C /* FilterItemView.swift in Sources */,
 				852E921928F393BD00B7777C /* AlcoholDescriptionView.swift in Sources */,
 				852E921F28F4C3FF00B7777C /* SearchResultView.swift in Sources */,

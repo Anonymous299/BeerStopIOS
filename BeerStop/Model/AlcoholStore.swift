@@ -10,7 +10,10 @@ import CoreData
 import UIKit
 
 class AlcoholStore: ObservableObject {
-    let url = URL(string: "http://68.183.108.111/api/alcohol?sortBy=price_index")!
+    
+    let tempAlcoholList: [Alcohol] = []
+    
+    let base_url = URL(string: "http://68.183.108.111/api/alcohol?sortBy=price_index")!
     
     static let shared = AlcoholStore()
     
@@ -126,30 +129,34 @@ class AlcoholStore: ObservableObject {
     }
     
     /// Fetches the earthquake feed from the remote server, and imports it into Core Data.
-    func fetchAlcohols(currentLink: String?) async throws {
+    func fetchAlcohols() async throws {
         let session = URLSession.shared
-        guard let (data, response) = try? await session.data(from: url),
+        
+       
+        guard let (data, response) = try? await session.data(from: base_url),
               let httpResponse = response as? HTTPURLResponse,
               httpResponse.statusCode == 200
         else {
-            print("Failed to received valid response and/or data.")
+            print("Failed to received valid response and/or data from \(base_url.absoluteString).")
             throw AlcoholError.missingData
         }
 
         do {
             // Decode the AlcoholProperties into a data model.
             let jsonDecoder = JSONDecoder()
-            let alcohols = try jsonDecoder.decode(AlcoholData.self, from: data).data
             
-            print("Received \(alcohols.count) records.")
-
-            // Import the AlcoholProperties into Core Data.
-            print("Start importing data to the store...")
-            try await importQuakes(from: alcohols)
-            print("Finished importing data.")
-        } catch {
-            throw AlcoholError.wrongDataFormat(error: error)
-        }
+                let alcohol_data = try jsonDecoder.decode(AlcoholData.self, from: data)
+                let alcohols = alcohol_data.data
+            print("Received \(alcohols.count) records from \(base_url.absoluteString).")
+                // Import the AlcoholProperties into Core Data.
+                print("Start importing data to the store...")
+                try await importQuakes(from: alcohols)
+                print("Finished importing data.")
+                
+            } catch {
+                throw AlcoholError.wrongDataFormat(error: error)
+            }
+        
     }
     
     /// Uses `NSBatchInsertRequest` (BIR) to import a JSON dictionary into the Core Data store on a private queue.
